@@ -1,0 +1,1039 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mohammad Skibul Islam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+		<!-- Include Font Awesome CDN in the head of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    <style>
+  /* General styles for the section */
+  
+
+  
+ 
+  #hobbies {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    background: #e9ecef;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.description {
+    display: none;
+    font-style: italic;
+    color: #666;
+}
+
+.card:hover .description {
+    display: block;
+    margin-top: 1rem;
+}
+
+.more-info {
+    display: none;
+    margin-top: 1rem;
+    color: #555;
+}
+
+.card:hover .more-info {
+    display: block;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.photo-gallery img {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* General styles for the photography section */
+#photography {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Styles for the heading */
+#photography h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333; /* Darker text color */
+}
+
+/* Photo gallery layout */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for each photo item */
+.photo-item {
+    position: relative; /* Positioning for overlay */
+    overflow: hidden; /* Hide overflow for the overlay */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for photo items */
+.photo-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+/* Styles for the images */
+.photo-item img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+/* Styles for the overlay */
+.photo-overlay {
+    position: absolute; /* Positioning overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    color: #FF9000; /* White text */
+    display: flex; /* Center text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+}
+
+/* Show overlay on hover */
+.photo-item:hover .photo-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Styles for overlay text */
+.photo-overlay p {
+    font-size: 1.2em; /* Text size */
+    text-align: center; /* Center text */
+    margin: 0; /* Remove default margin */
+}
+
+
+/* General styles for the blog section */
+#blog {
+    background-color: #FF9000; /* Light background color */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Styles for the heading */
+#blog h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333; /* Darker text color */
+}
+
+/* Grid layout for the blog cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for each blog card */
+.card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    position: relative; /* Positioning for hover effect */
+}
+
+/* Hover effect for blog cards */
+.card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+/* Styles for the card headings */
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #FF9000; /* Blue color for headings */
+}
+
+/* Styles for the card paragraphs */
+.card p {
+    font-size: 1em;
+    color: #555; /* Dark gray text color */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Add a decorative element to the card */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Height of the decorative line */
+    background-color: #FF9000; /* Blue color for the decorative line */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    transition: height 0.3s; /* Smooth transition for height */
+}
+
+/* Increase the height of the decorative line on hover */
+.card:hover::before {
+    height: 10px; /* Increase height on hover */
+}
+
+
+/* General styles for the news section */
+#news {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Styles for the heading */
+#news h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333; /* Darker text color */
+}
+
+/* Styles for the news card */
+#news-carousel {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative; /* Positioning for slider */
+    overflow: hidden; /* Hide overflow for the slider */
+    height: 100px; /* Fixed height for the carousel */
+}
+
+/* Styles for the news content */
+#news-content {
+    font-size: 1.2em;
+    color: #555; /* Dark gray text color */
+    line-height: 1.5; /* Line height for readability */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+/* Navigation buttons for the slider */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FF9000(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #FF9000; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are above content */
+}
+
+.slider-button.left {
+    left: 10px; /* Position left button */
+}
+
+.slider-button.right {
+    right: 10px; /* Position right button */
+}
+
+
+.game-board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .game-cell {
+            aspect-ratio: 1;
+            background-color: var(--card-bg);
+            border: none;
+            font-size: 2em;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .game-cell:hover {
+            background-color: rgba(240, 140, 52, 0.2);
+        }
+
+
+
+
+
+#game {
+    background-color: #f2eaea; /* White background for the game section */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    position: relative; /* For positioning the winning line */
+}
+
+h2 {
+    color: #333; /* Darker text color for the heading */
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.game-board div {
+    width: 100px;
+    height: 100px;
+    background-color: #FF9000; /* Blue background for cells */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em; /* Larger font size for X and O */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.game-board div:hover {
+    background-color: #FF9000; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#game-status {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #FF9000; /* Darker text color for status */
+}
+
+#game-score {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #FF9000; /* Darker text color for score */
+}
+
+#new-game-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF9000; /* Green background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#new-game-btn:hover {
+    background-color: #FF9000; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* General styles for the contact section */
+#contact {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px; /* Margin around the section */
+}
+
+/* Styles for the heading */
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color */
+}
+
+/* Styles for the social links container */
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Styles for each social link */
+.social-link {
+    font-size: 2.5em; /* Larger icons */
+    margin: 0 15px; /* Space between icons */
+    color:#FF9000; /* Blue color for icons */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for social links */
+.social-link:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .social-link {
+        font-size: 2em; /* Smaller icons on mobile */
+        margin: 0 10px; /* Adjust spacing */
+    }
+}
+
+
+
+    </style>
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" style="background: url(Image/Image11.jpg);"></div>
+							<h1><span>Mohammad Sakibul Islam</span></h1>
+							<h3><span>Computer Science and Engineering Student</span></h3>
+							<h3><span>Premier University Chittagong</span></h3>
+
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-twitter2"></i></a></li>
+									<li><a href="#"><i class="icon-facebook2"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<p>I am Mohammad Sakibul Islam, a driven CSE student at Premier University. I am passionate about harnessing the power of technology to create innovative solutions. I am dedicated to mastering the intricacies of computer science and aspire to make a significant impact in the field.</p>
+				</div>
+				<div class="col-md-8">
+					<h2>Hello There!</h2>
+					<p>I am drawn to the constant learning and problem-solving inherent in software engineering. The ever-evolving landscape of technology offers endless opportunities for growth and innovation. This same spirit of discovery fuels my passion for travel. Exploring new places and encountering different perspectives broadens my understanding of the world and myself. Both pursuits offer a continuous journey of learning and self-discovery.</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter2"></i></a></li>
+							<li><a href="#"><i class="icon-facebook3"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-resume" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>My Resume</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+
+						</li>
+						
+						</li>
+
+						<br>
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Education</h3></div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Undergraduate</h3>
+									<span class="company">Premier University Chittagong - 2023 - Expacted (2027) </span>
+								</div>
+								<div class="timeline-body">
+									<p>I'm currently honing my skills as a computer science engineer at Premier University, where I'm exploring the limitless possibilities of technology. I'm excited to graduate in 2027 and bring my knowledge and passion to the tech world.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">HSC </h3>
+									<span class="company">MES College - 2020 - 2022</span>
+								</div>
+								<div class="timeline-body">
+									<p></p>
+							</div>I'm a proud graduate of MES College, where I completed my Higher Secondary School certificate in 2022. This was a challenging but rewarding experience that prepared me for the next chapter in my life.
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">SSC</h3>
+									<span class="company">Chittagong Ideal High School - 2016 - 2020</span>
+								</div>
+								<div class="timeline-body">
+									<p>I graduated from Chittagong Ideal High School in Chittagong, where I earned my SSC Secondary School certificate."</p>
+							</div>
+						</li>
+					
+							</div>
+						</li>
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+	<div id="fh5co-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>HTML</strong>95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="93"><span><strong>CSS</strong>93%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>JavaScript</strong>90%</span></div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="89"><span><strong>Bootstrap5</strong>89%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="85"><span><strong>C</strong>95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Python</strong>90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Java</strong>70%</span></div>
+				</div>
+			</div>
+
+
+			<div id="fh5co-work" class="fh5co-bg-dark">
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h2>Projects</h2>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-4 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Image/SS.jpeg);">
+								<div class="desc">
+									<h3>Portfolio Website</h3>
+									<span>Creating a portfolio website as a student project</span>
+								</div>
+							</a>
+						</div>
+						
+						<div class="col-md-4 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Image/LD.jpg);">
+								<div class="desc">
+									<h3>Light Detector</h3>
+									<span>A light detector for the Electrical and Electronic course (Group project)</span>
+								</div>
+							</a>
+						</div>
+				
+						
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<section id="hobbies">
+				<h2>Hobbies</h2>
+			<div class="grid">
+					<div class="card animate-fadeInUp">
+						<h3>Computer Gaming</h3>
+						<p>Favorite Games:</p>
+						<ul>
+							<li>Counter Strike</li>
+							<li>Fortnite</li>
+							<li>Valorant</li>
+							<li>GTA 5</li>
+							<li>RDR 2</li>
+							<li>Monkey King</li>
+							<li>Witcher 3</li>
+						</ul>
+					</div>
+					<div class="card animate-fadeInUp">
+						<h3>Long Drives</h3>
+						<p class="description">Exploring new places and enjoying the open road.</p>
+						<p class="more-info">There's something magical about hitting the road with no destination in mind. The thrill of discovering hidden gems, scenic routes, and breathtaking landscapes makes every drive an adventure. Whether it's a weekend getaway or a spontaneous trip, long drives allow me to unwind and connect with nature.</p>
+					</div>
+					<div class="card animate-fadeInUp">
+						<h3>Photography</h3>
+						<p class="description">Capturing moments and expressing creativity through the lens.</p>
+						<p class="more-info">Photography is not just a hobby; it's a passion that allows me to tell stories through images. From landscapes to portraits, every shot is an opportunity to capture the beauty of the world around me. I love experimenting with different techniques and styles, and I often share my work in a small gallery below.</p>
+						<div class="photo-gallery">
+							<img src="Image/PXL_20241219_051311170.jpg" alt="Nature" />
+							<img src="Image/IMG_20241219_171035.jpg" alt="Cityscape" />
+							<img src="https://www.pawsbyzann.com/wp-content/uploads/2022/04/Lilly-Final-copy.jpg" alt="Portrait" />
+						</div>
+					</div>
+				</div>	
+			</section>
+
+	<section id="photography">
+		<h2>Photography</h2>
+		<div class="photo-gallery">
+			<div class="photo-item animate-fadeInUp">
+				<img src="Image/PXL_20241219_104935748.jpg" alt="Photo 1">
+				<div class="photo-overlay">
+					<p>Capturing moments in time</p>
+				</div>
+			</div>
+			<div class="photo-item animate-fadeInUp">
+				<img src="Image/PXL_20241219_051411954.jpg" alt="Photo 2">
+				<div class="photo-overlay">
+					<p>Finding beauty in simplicity</p>
+				</div>
+			</div>
+			<div class="photo-item animate-fadeInUp">
+				<img src="Image/PXL_20241219_094314573.PORTRAIT.jpg" alt="Photo 3">
+				<div class="photo-overlay">
+					<p>Through my lens</p>
+				</div>
+			</div>
+			<div class="photo-item animate-fadeInUp">
+				<img src="Image/PXL_20241219_062404959.jpg" alt="Photo 4">
+				<div class="photo-overlay">
+					<p>Stories in stillness</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="blog">
+		<h2>Blog</h2>
+		<div class="grid">
+			<div class="card animate-fadeInUp">
+				<h3>My Journey in Premier University as a CSE Student</h3>
+				<p>Sharing my experiences and learnings as a CSE student...</p>
+			</div>
+			<div class="card animate-fadeInUp">
+				<h3>Learning C and Python</h3>
+				<p>My journey of learning programming fundamentals...</p>
+			</div>
+			<div class="card animate-fadeInUp">
+				<h3>Exploring Java Programming</h3>
+				<p>Diving into object-oriented programming with Java...</p>
+			</div>
+			<div class="card animate-fadeInUp">
+				<h3>Building My Web Development Skills</h3>
+				<p>Learning modern web development technologies...</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="news">
+		<h2>Latest News</h2>
+		<div class="card animate-fadeInUp" id="news-carousel">
+			<p id="news-content"></p>
+			<button class="slider-button left" id="prev-button">❮</button>
+			<button class="slider-button right" id="next-button">❯</button>
+		</div>
+	</section>
+	
+
+	<section id="game">
+		<h2>Tic Tac Toe</h2>
+		<div class="card animate-fadeInUp">
+			<div id="game-status"></div>
+			<div class="game-board" id="game-board"></div>
+			<div id="game-score"></div>
+			<button id="new-game-btn">New Game</button>
+		</div>
+	</section>
+
+
+	<div id="fh5co-consult">
+		<div class="video fh5co-video" style="background-image: url(Image/PHOTO-2025-01-24-11-58-03.jpg);">
+			<div class="overlay"></div>
+		</div>
+		<div class="choose animate-box">
+			<h2>Contact</h2>
+			<form action="#">
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="email" class="form-control" placeholder="Your email address">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about me"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message" class="btn btn-primary">
+				</div>
+
+			</form>	
+		</div>
+	</div>
+   <br>
+   <br>
+
+<div class="conlink">
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+        <a href="mailto:your.email@example.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Reddit"><i class="fab fa-reddit-alien"></i></a>
+    </div>
+</section>
+</div>
+	
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; 2023 Muhammad Sakibul Islam. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+<script>
+
+const newsContent = [
+    "Our department just organized an Ice Festival and Qawwali evening.",
+    "Successfully completed my mid-term exams in the 3rd semester.",
+    "Finished my 2nd semester with excellent results."
+];
+
+let currentIndex = 0;
+
+// Function to update the news content
+function updateNewsContent() {
+    const newsElement = document.getElementById('news-content');
+    newsElement.textContent = newsContent[currentIndex];
+}
+
+// Function to show the next news item
+function showNextNews() {
+    currentIndex = (currentIndex + 1) % newsContent.length; // Loop back to the start
+    updateNewsContent();
+    slideNews();
+}
+
+// Function to show the previous news item
+function showPrevNews() {
+    currentIndex = (currentIndex - 1 + newsContent.length) % newsContent.length; // Loop back to the end
+    updateNewsContent();
+    slideNews();
+}
+
+// Function to apply sliding effect
+function slideNews() {
+    const newsElement = document.getElementById('news-content');
+    newsElement.style.transform = 'translateX(-100%)'; // Slide out
+    setTimeout(() => {
+        newsElement.style.transform = 'translateX(0)'; // Slide in
+    }, 50); // Small delay to allow the slide out to take effect
+}
+
+// Initialize the news content
+updateNewsContent();
+
+// Event listeners for buttons
+document.getElementById('next-button').addEventListener('click', showNextNews);
+document.getElementById('prev-button').addEventListener('click', showPrevNews);
+
+
+//game
+
+            // Tic Tac Toe game
+            const gameBoard = document.getElementById('game-board');
+            const gameStatus = document.getElementById('game-status');
+            const gameScore = document.getElementById('game-score');
+            const newGameBtn = document.getElementById('new-game-btn');
+            let currentPlayer = 'X';
+            let gameState = ['', '', '', '', '', '', '', '', ''];
+            let gameActive = true;
+            let scores = { X: 0, O: 0 };
+
+            const winningConditions = [
+                [0, 1, 2],
+                [3, 4, 5],
+                [6, 7, 8],
+                [0, 3, 6],
+                [1, 4, 7],
+                [2, 5, 8],
+                [0, 4, 8],
+                [2, 4, 6]
+            ];
+
+            function handleCellClick(clickedCellEvent) {
+                const clickedCell = clickedCellEvent.target;
+                const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+
+                if (gameState[clickedCellIndex] !== '' || !gameActive) {
+                    return;
+                }
+
+                gameState[clickedCellIndex] = currentPlayer;
+                clickedCell.textContent = currentPlayer;
+                checkResult();
+            }
+
+            function checkResult() {
+                let roundWon = false;
+
+                for (let i = 0; i < winningConditions.length; i++) {
+                    const [a, b, c] = winningConditions[i];
+                    if (gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c]) {
+                        roundWon = true;
+                        break;
+                    }
+                }
+
+                if (roundWon) {
+                    gameStatus.textContent = `Player ${currentPlayer} wins!`;
+                    scores[currentPlayer]++;
+                    gameActive = false;
+                    updateScore();
+                    return;
+                }
+
+                if (!gameState.includes('')) {
+                    gameStatus.textContent = "It's a draw!";
+                    gameActive = false;
+                    return;
+                }
+
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                gameStatus.textContent = `Player ${currentPlayer}'s turn`;
+            }
+
+            function updateScore() {
+                gameScore.textContent = `X: ${scores.X} - O: ${scores.O}`;
+            }
+
+            function resetGame() {
+                currentPlayer = 'X';
+                gameState = ['', '', '', '', '', '', '', '', ''];
+                gameActive = true;
+                gameStatus.textContent = `Player ${currentPlayer}'s turn`;
+                document.querySelectorAll('.game-cell').forEach(cell => cell.textContent = '');
+            }
+
+            for (let i = 0; i < 9; i++) {
+                const cell = document.createElement('button');
+                cell.classList.add('game-cell');
+                cell.setAttribute('data-cell-index', i);
+                cell.addEventListener('click', handleCellClick);
+                gameBoard.appendChild(cell);
+            }
+
+            newGameBtn.addEventListener('click', resetGame);
+            resetGame();
+            updateScore();
+		
+
+</script>
+
+	
+	</body>
+</html>
+
